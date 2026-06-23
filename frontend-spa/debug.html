@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Debug Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <div id="app">
+        <p v-if="error" class="text-red-600 font-bold">ERROR: {{ error }}</p>
+        <div v-else>
+            <p class="text-green-600 font-bold mb-4">Vue OK! Testing komponen...</p>
+            <component-test></component-test>
+        </div>
+    </div>
+    
+    <script src="assets/js/components/Kategori.js"></script>
+    <script>
+        const { createApp } = Vue;
+        
+        try {
+            const app = createApp({
+                data() { return { error: null }; },
+                errorCaptured(err) {
+                    this.error = err.message;
+                    return false;
+                }
+            });
+            app.component('component-test', Kategori);
+            app.mount('#app');
+            console.log('App mounted berhasil!');
+        } catch(e) {
+            document.body.innerHTML = '<div style="color:red;padding:20px;font-size:18px;"><b>ERROR JS:</b><br>' + e.message + '<br><br>' + e.stack + '</div>';
+        }
+        
+        // Test axios
+        axios.defaults.baseURL = 'http://localhost:8080/api';
+        const token = localStorage.getItem('token');
+        if (token) {
+            axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+            axios.get('/kategori')
+                .then(r => console.log('API OK:', r.data))
+                .catch(e => console.error('API ERROR:', e.message));
+        } else {
+            console.warn('Tidak ada token - silakan login dulu di aplikasi utama');
+        }
+    </script>
+</body>
+</html>

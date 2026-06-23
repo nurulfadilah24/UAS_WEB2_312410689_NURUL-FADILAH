@@ -1,0 +1,250 @@
+ERROR - 2026-06-20 13:59:02 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-06-20 13:59:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas_web2_inventory'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(65): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_8\\htdocs\\UAS_WEB_2_NURUL\\backend-api\\public\\index.php')
+ERROR - 2026-06-20 13:59:30 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-06-20 13:59:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas_web2_inventory'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(65): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_8\\htdocs\\UAS_WEB_2_NURUL\\backend-api\\public\\index.php')
+ERROR - 2026-06-20 13:59:34 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-06-20 13:59:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas_web2_inventory'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(65): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_8\\htdocs\\UAS_WEB_2_NURUL\\backend-api\\public\\index.php')
+ERROR - 2026-06-20 14:01:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-06-20 14:01:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas_web2_inventory'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(65): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_8\\htdocs\\UAS_WEB_2_NURUL\\backend-api\\public\\index.php')
+ERROR - 2026-06-20 14:01:37 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#13 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'uas_web2_inventory' in C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+#3 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\app\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+#6 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+#7 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+#8 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\public\index.php(65): CodeIgniter\Boot::bootWeb()
+#12 C:\xampp_8\htdocs\UAS_WEB_2_NURUL\backend-api\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2026-06-20 14:01:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uas_web2_inventory'
+[Method: POST, Route: api/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(297): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Api\Auth.php(15): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Api\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(65): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_8\\htdocs\\UAS_WEB_2_NURUL\\backend-api\\public\\index.php')
