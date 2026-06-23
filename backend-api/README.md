@@ -101,29 +101,61 @@ Password admin123
 ## Screenshots 
 
 ### Halaman Login 
+<img width="1365" height="720" alt="image" src="https://github.com/user-attachments/assets/83f3377c-9ccf-427f-8286-d355e9535796" />
 
 
 ### Dashboard 
+<img width="1365" height="680" alt="image" src="https://github.com/user-attachments/assets/5644d16c-3348-4811-ad4b-dbb3cc9b150c" />
 
 
-### Manajemen Produk 
+### Manajemen kategori 
+<img width="1365" height="685" alt="image" src="https://github.com/user-attachments/assets/6c4f2f3c-b877-40cb-a510-7f70706c2d4f" />
+
+
+### Manajemen Supplier
+<img width="1358" height="672" alt="image" src="https://github.com/user-attachments/assets/1b4f8b7b-eea9-4d93-8216-251f4cccf880" />
+
+
+### Histori Aktivitas
+<img width="1365" height="724" alt="image" src="https://github.com/user-attachments/assets/834850a4-52f6-4a07-b428-8632a5f513fc" />
+
+<img width="1346" height="676" alt="image" src="https://github.com/user-attachments/assets/0c4b6f38-e671-471d-b6a5-c64b72897ac5" />
+
+
+### About
+<img width="1350" height="682" alt="image" src="https://github.com/user-attachments/assets/1d0591c7-6f87-4bda-aabb-563fea42c451" />
+
+
+## Logout
+<img width="189" height="144" alt="image" src="https://github.com/user-attachments/assets/5eda2028-caf1-49f9-8075-c6c8dc99913e" />
 
 
 
-### Modal Tambah/Edit Produk 
+### Modal Tambah/Edit Produk/Hapus 
+<img width="340" height="493" alt="image" src="https://github.com/user-attachments/assets/301c295d-cc77-4cd0-9ea5-a1b628f967dc" />
 
+<img width="342" height="500" alt="image" src="https://github.com/user-attachments/assets/98e1d33d-48ae-4b52-8550-9fec73ff3f37" />
 
-
-### Manajemen Kategori 
-
+<img width="449" height="170" alt="image" src="https://github.com/user-attachments/assets/49928d21-32a9-489f-812f-972581625a5e" />
+ 
 
 
 ### Database Schema (phpMyAdmin)
+<img width="1176" height="404" alt="image" src="https://github.com/user-attachments/assets/77d390a8-03f6-4088-a10b-e86ac87a75a2" />
+
+<img width="1179" height="507" alt="image" src="https://github.com/user-attachments/assets/5dd05f16-a642-4f95-b907-837ca18487dc" />
+
+<img width="1179" height="474" alt="image" src="https://github.com/user-attachments/assets/ea1f2616-9f42-47ae-b5b8-1caf94e9ce42" />
+
+<img width="1182" height="474" alt="image" src="https://github.com/user-attachments/assets/8e88c834-8042-45f7-b4f3-d25dd8238ab4" />
+
+<img width="1176" height="639" alt="image" src="https://github.com/user-attachments/assets/fd1fd655-40db-4fa8-81ae-00022277040a" />
+
+
 
 
 ---
 
-- Link Youtube: 
+- Link Youtube: https://youtu.be/vQQJQONivBc?si=XuOp4MQwdLA7pVeo 
 - Link Github: 
-- Akses Login: 
-- Akses Dashboard
+- Akses Login:http://localhost/UAS_WEB_2_NURUL/frontend-spa/#/login  
