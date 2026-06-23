@@ -157,5 +157,5 @@ Password admin123
 ---
 
 - Link Youtube: https://youtu.be/vQQJQONivBc?si=XuOp4MQwdLA7pVeo 
-- Link Github: 
+- Link Github:  https://github.com/nurulfadilah24/UAS_WEB2_312410689_NURUL-FADILAH.git 
 - Akses Login:http://localhost/UAS_WEB_2_NURUL/frontend-spa/#/login  
